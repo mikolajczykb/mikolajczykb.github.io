@@ -1,0 +1,280 @@
+* {
+	box-sizing: border-box;
+}
+
+html {
+	/*background-image: linear-gradient(to right, rgba(255, 229, 180, 0.82), rgba(255, 200, 180, 1.00));*/
+	background-image: linear-gradient(to right, rgba(254, 253, 231, 0.9), rgba(254, 254, 249, 0.9));
+}
+a {
+	text-decoration-color: transparent;
+	text-decoration: none;
+}
+
+audio {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 10px;
+}
+
+header a:link {
+	color: white;
+}
+
+a:link {
+	color:black;
+}
+
+a:visited {
+	color: gray;
+}
+
+body {
+	font-family: 'Roboto', Arial, Sans-serif, serif;
+}
+
+.container {
+	display: inline-block;
+	height: 100%;
+}
+
+header #alternate {
+	top: 0;
+	background-color: black;
+	color: white;
+	margin-bottom: 3px;
+}
+
+header #alternate ul{
+	padding: 30px 0px 0px 0px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+header #alternate ul li{
+	text-align: center;
+	vertical-align: middle;
+	display: inline-block;
+	list-style-type: none;
+	width: 33%;
+}
+
+#centerText {
+	text-decoration: none;
+	font-size: 30px;
+	font-family: 'Fascinate', cursive, 'Open Sans', arial, sans-serif;
+}
+
+#alternate #headerImage {
+	display: inline;
+	position: absolute;
+	top: 5%;
+	left: 30%;
+}
+
+
+header img {
+	display: none;
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-left: auto;
+	margin-right: auto;
+	border: 2px solid black;
+}
+
+.side {
+	width: 20%;
+	display: flex;
+	align-items: center;
+}
+
+.main {
+  border-top: 5px solid black;
+  border-bottom: 5px solid black;
+  border-left: 1px dotted black;
+  border-right: 1px dotted black;
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
+}
+
+article {
+	border: 1px solid black;
+	margin: 15px;
+	padding: 20px 60px 15px;
+	font-size: 18px;
+	background-color: rgb(255, 240, 179);
+	border-radius: 10px;
+}
+
+h3 {
+	text-decoration: underline;
+	font-size: 30px;
+}
+
+article > p {
+	font-family: 'Open Sans', Arial, sans-serif;
+}
+
+#sidebar{
+  position: absolute;
+  z-index: 1; /* Stay on top */
+  transition: top 0.3s;
+  transition-timing-function: ease-in-out;
+  text-align: left;
+  font-family: 'Open Sans', Arial, sans-serif;
+
+}
+
+#sidebar ul {
+	list-style-type: none;
+	padding-left: 0;
+}
+
+#sidebar ul li {
+	text-decoration: none;
+	margin: 20px auto;
+	text-align: center;
+}
+
+#sidebar ul li a {
+  font-size: 20px;
+  color: black;
+  text-decoration-color: transparent;
+  padding: 5px 15px 5px 15px;
+  border-bottom: 1px solid black;
+	margin: 10px 5px;
+}
+
+/* When you mouse over the navigation links, change their color */
+#sidebar a:hover {
+	border: 1px solid black;
+	margin-left: 4px;
+	margin-right: 4px;
+	border-radius: 20px;
+	background-color: rgba(252, 248, 241, 1.0);
+}
+
+@media screen and (max-width: 1450px) {
+  #sidebar ul li a {
+  	font-size: 18px;
+  }
+}
+
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-width: 1000px) {
+  #sidebar ul {
+  	margin: 0 0 0 0;
+  	padding: 0 0 0 0;
+  }
+  #sidebar ul li a {
+  	font-size: 13px;
+  	padding: 2px 2px 2px 2px;
+  }
+}
+
+canvas {
+	padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.centered {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-bottom: 15px;
+}
+
+.button {
+	display: inline-block;
+	text-decoration: none;
+	text-align: center;
+	border: none;
+	color: white;
+	background-color: gray;
+	padding: 10px 15px;
+	border-radius: 5px;
+}
+
+.button:hover {
+	background-color: lightgray;
+	color: black;
+}
+
+#zdjecia {
+	display: none;
+	margin-bottom: 20px;
+}
+
+
+.gallery {
+  border: 1px solid #ccc;
+}
+
+.gallery:hover {
+  border: 1px solid #777;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+.gallery img:hover {
+	opacity: 0.5;
+}
+
+
+
+
+.responsive {
+  padding: 0 5px 0 5px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 1200px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+footer {
+	
+	background-color: black;
+	color: white;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-family: "Open Sans", Arial, sans-serif;
+}
+
+footer > p {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+
+}
+
+#documentation {
+	text-align: center;
+	vertical-align: middle;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <title>Animacja</title>
+    <link rel="stylesheet" href="../css/main.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fascinate&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+    <div id="alternate">
+        <ul>
+            <li><a href="../index.html">Strona główna</a></li>
+            <li id="centerText">Ciag Fibonacciego</li>
+            <li><a href="../html/dokumentacja.html">Dokumentacja</a></li>
+        </ul>
+        <audio controls>
+            <source src="../audio/circles.mp3" type="audio/mp3">
+            Error
+        </audio>
+    </div>
+</header>
+<div class="centered">
+    <button class="button" onclick="startAnimation();">Rozpocznij animację</button>
+</div>
+<div class="centered">
+    <img src="../img/fibspiral.png" alt="Pokaz zlotego podziału" width="300" height="200">
+</div>
+<div>
+    <canvas id="can" width="100" height="700"></canvas>
+    <script src="../js/canv.js" defer> </script>
+</div>
+<footer id="end">
+    <p>Bartosz Mikołajczyk</p>
+    <p>Projekt wykonany na przedmiot Techniki Internetowe</p>
+    <p>Wydział Fizyki i Informatyki Stosowanej, 2020</p>
+    <p>Kontakt: bmikolaj@student.agh.edu.pl</p>
+    <p>
+        <a href="http://jigsaw.w3.org/css-validator/check/referer">
+            <img style="border:0;width:88px;height:31px"
+                 src="http://jigsaw.w3.org/css-validator/images/vcss"
+                 alt="Poprawny CSS!" />
+        </a>
+    </p>
+</footer>
+</body>
+</html>
